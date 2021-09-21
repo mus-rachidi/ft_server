@@ -6,6 +6,3 @@ COPY default /etc/nginx/sites-available/default
 COPY test.php /tmp/test.php
 EXPOSE 80/tcp
 CMD service php7.4-fpm start && service nginx start && tail -f /dev/null
-
-
- 
